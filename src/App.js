@@ -33,7 +33,7 @@ function App() {
     <Routes>
 
       <Route 
-      path="/" 
+      path="/myportfolio" 
       element={
         <React.Suspense fallback={<>...</>}>
             <Homepage setMode={setMode} mode={mode}/>
