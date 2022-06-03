@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+.project{
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.project > .left > img{
+    border-radius: 2rem;
+    width: 35rem;
+    position: relative;
+    margin: 0;
+}
+
+.project>.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+.project>.right>.right-top, .project>.right>.right-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 0;
+}
+.project>.right>.description{
+    background-color: #242424;
+    border-radius: 0.5rem;
+    width: 16rem;
+    padding: 2rem;
+    margin-left: -4rem;
+    z-index: 90;
+    box-shadow: 5px 8px 5px #00000065;
+}
+
+.project > .right > .right-top > .type, .project>.right>.right-top>.name{
+    margin: 0;
+    padding: 0;
+}
+
+.project>.right>.right-top>.type{
+    font-family: 'Ubuntu Mono', monospace;
+    margin-bottom: -10px;
+}
+
+.project>.right>.right-bottom > .tags{
+    display: flex;
+    gap: 1.5rem;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.project>.right>.right-bottom>.icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    align-items: center;
+}
+
+#colored{
+    color: aquamarine;
+}
+
+@media only screen and (max-width: 600px) {
+    .project>.left>img {
+        width: 80vw;
+    }
+    .project{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .project>.right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
+    }
+    .project>.right>.description {
+        background-color: #242424;
+        border-radius: 0.5rem;
+        width: 16rem;
+        padding: 2rem;
+        margin: 0;
+        z-index: 90;
+        box-shadow: 5px 8px 5px #00000065;
+    }
+    .project>.right>.right-bottom>.icons{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+    }
+    .project>.right>.right-bottom>.tags>.tag {
+        margin: 0.5rem;
+    }
+}

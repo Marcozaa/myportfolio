@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+.headerInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.2rem;
+    align-items: center;
+    height: 40vh;
+
+}
+
+.headerInfo > h1, .headerInfo>p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 3.5rem;
+}
+
+.headerInfo>p {
+    font-size: 2.5rem;
+}
+
+@keyframes gradient{
+    0% {
+            background-position: 0 50%;
+        }
+    
+        50% {
+            background-position: 100% 50%;
+        }
+    
+        100% {
+            background-position: 0 50%;
+        }
+}
+
+#bold {
+    font-weight: 700;
+    animation: gradient 10s ease-in-out infinite;
+        background: linear-gradient(to right, #5bc0eb,  #fde74c,  #9bc53d,  #e55934,  #fa7921);
+        background-size: 300%;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+.headerInfo > .location {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 9rem;
+}
+
+.headerInfo>.location > p {
+
+    margin: 0;
+    padding: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .headerInfo>p {
+        font-size: 1.5rem;
+    }
+    .headerInfo>h1{
+        font-size: 3rem;
+    }
+    .App{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 70vh;
+    }
+}

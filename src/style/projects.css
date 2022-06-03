@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+.projects > .projectsContainer> .top{
+    display: flex;
+    justify-content: flex-start;
+    padding: 2rem;
+    align-items: center;
+    gap: 2rem;
+    color: white;
+    font-weight: 400;
+    font-family: 'Noto Sans', sans-serif;
+}
+.projects>.projectsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects>.projectsContainer >.projectsContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.projects>.projectsContainer>.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: 100;
+}

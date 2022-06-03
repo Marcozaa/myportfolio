@@ -14,7 +14,7 @@
             "mode": "precise"
         },
         "rate": {
-            "delay": 0.25,
+            "delay": 0.22,
             "quantity": 4
         }
     },
@@ -79,11 +79,11 @@
     "interactivity": {
         "events": {
             "onHover": {
-                "enable": false,
-                "mode": "grab"
+                "enable": true,
+                "mode": "bubble"
             },
             "onClick": {
-                "enable": false,
+                "enable": true,
                 "mode": "repulse"
             },
             "resize": true

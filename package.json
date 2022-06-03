@@ -1,17 +1,27 @@
 {
+  "homepage": "http://Marcozaa.github.io/react-deploy",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chakra-ui/react": "^2.1.2",
+    "framer-motion": "^6.3.6",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-icons": "^4.4.0",
+    "react-offcanvas": "^0.4.0",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "react-sidebar": "^3.0.2",
+    "react-simple-typewriter": "^3.0.1",
     "react-tsparticles": "^2.0.6",
     "tslib": "^2.4.0",
     "tsparticles": "^2.0.6",
     "tsparticles-engine": "^2.0.6"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -31,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
