@@ -9,6 +9,7 @@ import techTalk from '../images/techTalk.jpg'
 import minecraftGenerator from '../images/minecraftGenerator.jpg'
 import musicPlayer from '../images/musicPlayer.jpg'
 import RSAchat from '../images/RSAchat.jpg'
+import redditClone from '../images/redditClone.jpg'
 import { motion } from 'framer-motion';
 export default function Projects() {
     const particlesInit = useCallback(main => {
@@ -35,6 +36,14 @@ export default function Projects() {
             gitHublink={'https://github.com/Marcozaa/techtalk'}
             externalLink={'https://techtalk-9f0c7.web.app/'}
             tags={['React', 'Firebase', 'Chakra UI']}
+            />
+            <Project
+            name ={'Reddit clone'}
+            description={['Full stack clone of ', <span id='colored'> reddit </span>]}
+            image={redditClone}
+            gitHublink={'https://github.com/Marcozaa/redditClone'}
+            externalLink={'https://reddit-clone-jrbk9y7ly-marcozaa.vercel.app/'}
+            tags={['GraphQL', 'Typescript', 'SQL']}
             />
             <Project
             name ={'Map Generator'}
